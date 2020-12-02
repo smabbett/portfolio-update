@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ABeeZee&display=swap');
+
+/* Set ALL HTML elements with border-box sizing */
+* {
+  box-sizing: border-box;
+}
+
+ /* CSS HEX
+ --light-goldenrod-yellow: #faf8d4ff;
+ --almond: #ebdccbff;
+ --pale-silver: #c3baaaff;
+ --taupe-gray: #91818aff;
+ --heliotrope-gray: #b2a3b5ff;
+*/
+
+.wrapper {
+    margin: auto;
+    width: 90%;
+}
+
+body {
+  text-align:center;
+  background-color: #faf8d4ff;
+}
+
+main {
+  font-family: 'ABeeZee', cursive;
+  margin: 0 250px;
+}
+
+.outset {
+  border: 10px outset #ebdccbff;
+  background-color: #b2a3b5ff;
+  margin: 20px 10%;
+  padding: 10px;
+  }
+
+
+.headline {
+  height: 90px;
+  font-family: 'Suranna', serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #91818aff;
+}
+
+img {
+  border: 1px;
+  width: 350px;
+}
+
+h1 {
+  padding-top: 10px;
+}
+
+.headline, footer {
+  background-color: #b2a3b5ff;
+}
+
+.fa_custom {
+  color: #c3baaaff;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
+hr {
+  width: 800px;
+  height: 50px;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+	background-image: url("images/hr-joro-yordanov.png");
+}
+
+#copyright {
+  text-align: right;
+  color: #91818aff;
+}
