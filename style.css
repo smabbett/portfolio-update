@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
  /* CSS HEX
  --light-goldenrod-yellow: #faf8d4ff;
  --almond: #ebdccbff;
@@ -14,7 +13,6 @@
  --taupe-gray: #91818aff;
  --heliotrope-gray: #b2a3b5ff;
 */
-
 
 .wrapper {
     margin: auto;
@@ -37,7 +35,6 @@ main {
   margin: 20px 10%;
   padding: 10px;
   }
-
 
 .headline {
   height: 90px;
@@ -80,4 +77,5 @@ hr {
 
 #copyright {
   text-align: right;
+  color: #91818aff;
 }
