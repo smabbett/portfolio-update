@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
  /* CSS HEX
  --light-goldenrod-yellow: #faf8d4ff;
  --almond: #ebdccbff;
@@ -14,7 +13,6 @@
  --taupe-gray: #91818aff;
  --heliotrope-gray: #b2a3b5ff;
 */
-
 
 .wrapper {
     margin: auto;
@@ -30,14 +28,13 @@ main {
   font-family: 'ABeeZee', cursive;
   margin: 0 250px;
 }
-
+/*outset frame for image*/
 .outset {
   border: 10px outset #ebdccbff;
   background-color: #b2a3b5ff;
   margin: 20px 10%;
   padding: 10px;
   }
-
 
 .headline {
   height: 90px;
@@ -59,11 +56,11 @@ h1 {
 .headline, footer {
   background-color: #b2a3b5ff;
 }
-
+/*LinkedIn & GitHub logos color
 .fa_custom {
   color: #c3baaaff;
 }
-
+*/
 ul {
   display: inline-block;
   text-align: left;
@@ -77,7 +74,12 @@ hr {
   margin-bottom: 20px;
 	background-image: url("images/hr-joro-yordanov.png");
 }
+a:link    { color: #c3baaaff; }
+a:visited { color: #b2a3b5ff; }
+a:hover   { color: #ebdccbff; }
+a:active  { color: #aa9e88ff; }
 
 #copyright {
   text-align: right;
+  color: #91818aff;
 }
