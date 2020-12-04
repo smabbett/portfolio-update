@@ -61,7 +61,7 @@ h1 {
   color: #c3baaaff;
 }
 */
-ul {
+ul, ol {
   display: inline-block;
   text-align: left;
 }
@@ -78,6 +78,10 @@ a:link    { color: #c3baaaff; }
 a:visited { color: #b2a3b5ff; }
 a:hover   { color: #ebdccbff; }
 a:active  { color: #aa9e88ff; }
+
+.reasons {
+  text-align: center;
+}
 
 #copyright {
   text-align: right;
