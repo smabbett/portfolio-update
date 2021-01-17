@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
 @import url('https://fonts.googleapis.com/css?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* Set ALL HTML elements with border-box sizing */
 * {
   box-sizing: border-box;
 }
 
- /* CSS HEX
+/* CSS HEX
  --light-goldenrod-yellow: #faf8d4ff;
  --almond: #ebdccbff;
  --pale-silver: #c3baaaff;
@@ -14,76 +15,156 @@
  --heliotrope-gray: #b2a3b5ff;
 */
 
-.wrapper {
-    margin: auto;
-    width: 90%;
-}
+/* General Styles */
 
 body {
-  text-align:center;
-  background-color: #faf8d4ff;
+  background-color: #f4f2f8;
 }
 
 main {
-  font-family: 'ABeeZee', cursive;
-  margin: 0 250px;
+  font-family: 'Montserrat', cursive;
+  padding: 20px 0;
 }
-/*outset frame for image*/
-.outset {
-  border: 10px outset #ebdccbff;
-  background-color: #b2a3b5ff;
-  margin: 20px 10%;
-  padding: 10px;
-  }
 
-.headline {
-  height: 90px;
-  font-family: 'Suranna', serif;
-  font-size: 40px;
-  letter-spacing: 2px;
+.headline,
+footer {
+  background-color: #b2a3b5ff;
+  font-family: 'Montserrat Alternates', serif;
+}
+
+footer {
+  height: 70px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 400px;
+  margin-left: 20px;
   color: #91818aff;
 }
 
 img {
   border: 1px;
-  width: 350px;
+  width: 100%;
 }
 
-h1 {
-  padding-top: 10px;
-}
-
-.headline, footer {
+/*outset frame for image*/
+.outset {
+  border: 10px outset #ebdccbff;
   background-color: #b2a3b5ff;
-}
-/*LinkedIn & GitHub logos color
-.fa_custom {
-  color: #c3baaaff;
-}
-*/
-ul, ol {
-  display: inline-block;
-  text-align: left;
+  padding: 10px;
 }
 
+/*Groups & Items (Mobile First) */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 30px;
+}
+
+/*Groups & Items (Desktop) */
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav {
+    margin-top: 14px;
+  }
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* ---  Navigation --- */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul,
+ol {
+  display: inline-block;
+}
 hr {
   width: 800px;
   height: 50px;
   border: none;
   margin-top: 30px;
   margin-bottom: 20px;
-	background-image: url("images/hr-joro-yordanov.png");
+  background-image: url('images/hr-joro-yordanov.png');
 }
-a:link    { color: #c3baaaff; }
-a:visited { color: #b2a3b5ff; }
-a:hover   { color: #ebdccbff; }
-a:active  { color: #aa9e88ff; }
+a:link {
+  color: #91818aff;
+}
+a:visited {
+  color: rgb(137, 71, 153);
+}
+a:hover {
+  color: #ebdccbff;
+}
+a:active {
+  color: #aa9e88ff;
+}
 
 .reasons {
   text-align: center;
 }
 
 #copyright {
-  text-align: right;
+  text-align: center;
   color: #91818aff;
+}
+
+/* Contact Form Design */
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }
