@@ -40,6 +40,7 @@ h1 {
   font-weight: 400px;
   margin-left: 20px;
   color: #91818aff;
+  text-align: center;
 }
 
 img {
@@ -58,12 +59,16 @@ img {
   padding: 10px;
 }
 
+/* .portfolio {
+  align-content: flex-start;
+} */
+
 /*Groups & Items (Mobile First) */
 .group {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .item {
